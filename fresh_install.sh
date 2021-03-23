@@ -49,8 +49,5 @@ dnf install alacritty \
             neofetch \
             i3 \
             picom \
-<<<<<<< HEAD
-            light
-=======
+            light \
             black
->>>>>>> 94c5fdddd3cf093f46ceab5df63c472b41bd1d2b
