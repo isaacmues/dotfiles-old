@@ -48,4 +48,5 @@ dnf install alacritty \
             pigz \
             neofetch \
             i3 \
-            picom
+            picom \
+            light
