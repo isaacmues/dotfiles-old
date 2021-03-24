@@ -50,4 +50,5 @@ dnf install alacritty \
             i3 \
             picom \
             light \
+            dunst \
             black
