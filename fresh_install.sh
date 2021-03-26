@@ -51,4 +51,8 @@ dnf install alacritty \
             picom \
             light \
             dunst \
-            black
+            black \
+            zsh \
+            autojump-zsh \
+            zsh-autosuggestions \
+            zsh-syntax-highlighting
