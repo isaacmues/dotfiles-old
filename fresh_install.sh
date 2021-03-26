@@ -10,10 +10,18 @@ dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(r
 
 dnf install alacritty \
             starship \
-            awesome-vim-colorschemes \
             bat \
             exa \
             vim \
+            awesome-vim-colorschemes \
+            vim-jedi \
+            vim-latex* \
+            vim-syntastic \
+            vim-syntastic-c \
+            vim-syntastic-cpp \
+            vim-syntastic-julia \
+            vim-syntastic-python \
+            vim-syntastic-tex \
             zathura \
             zathura-plugins-all \
             zathura-bash-completion \
