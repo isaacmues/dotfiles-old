@@ -63,4 +63,5 @@ dnf install alacritty \
             zsh \
             autojump-zsh \
             zsh-autosuggestions \
-            zsh-syntax-highlighting
+            zsh-syntax-highlighting \
+            network-manager-applet
