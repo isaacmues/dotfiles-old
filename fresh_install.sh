@@ -22,6 +22,7 @@ dnf install -y alacritty \
             vim-syntastic-julia \
             vim-syntastic-python \
             vim-syntastic-tex \
+            vim-fugitive \
             zathura \
             zathura-plugins-all \
             zathura-bash-completion \
