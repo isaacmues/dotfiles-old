@@ -12,6 +12,7 @@ dnf install -y alacritty \
             starship \
             bat \
             exa \
+            lsd \
             vim \
             awesome-vim-colorschemes \
             vim-jedi \
