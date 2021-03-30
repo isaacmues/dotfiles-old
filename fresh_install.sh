@@ -4,11 +4,11 @@
 
 dnf -y update
 
-dnf groupinstall Python* 'C Development Tools and Libraries'
+dnf groupinstall -y Python* 'C Development Tools and Libraries'
 
-dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-dnf install alacritty \
+dnf install -y alacritty \
             starship \
             bat \
             exa \
@@ -64,4 +64,17 @@ dnf install alacritty \
             autojump-zsh \
             zsh-autosuggestions \
             zsh-syntax-highlighting \
-            network-manager-applet
+            network-manager-applet \
+	    chromium
+
+# Install Nerdfont for Powerlevel10k
+mkdir /usr/share/fonts/meslolgs-nf/
+
+sudo -u $USER wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+sudo -u $USER wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+sudo -u $USER wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+sudo -u $USER wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+
+mv MesloLGS*.ttf /usr/share/fonts/meslolgs-nf/
+
+fc-cache -v
