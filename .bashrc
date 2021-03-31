@@ -18,3 +18,9 @@ export PATH
 # User specific aliases and functions
 
 eval "$(starship init bash)"
+
+alias ls='lsd'
+alias ll='lsd -l'
+alias la='lsd -a'
+alias lla='lsd -la'
+alias lt='lsd --tree'
