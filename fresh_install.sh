@@ -82,7 +82,7 @@ mv MesloLGS*.ttf /usr/share/fonts/meslolgs-nf/
 fc-cache -v
 
 # VirtualBox installation
-dnf install VirtualBox kernel-devel-$(uname -r) akmod-VirtualBox
+dnf -y install VirtualBox kernel-devel-$(uname -r) akmod-VirtualBox
 akmods
 systemctl restart vboxdrv
-usermod -a -G vboxuser $USER
+usermod -a -G vboxusers $USER
