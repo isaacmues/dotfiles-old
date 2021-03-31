@@ -80,3 +80,9 @@ sudo -u $USER wget https://github.com/romkatv/powerlevel10k-media/raw/master/Mes
 mv MesloLGS*.ttf /usr/share/fonts/meslolgs-nf/
 
 fc-cache -v
+
+# VirtualBox installation
+dnf install VirtualBox kernel-devel-$(uname -r) akmod-VirtualBox
+akmods
+systemctl restart vboxdrv
+usermod -a -G vboxuser $USER
