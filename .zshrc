@@ -23,3 +23,5 @@ alias la='lsd -a'
 alias lla='lsd -la'
 alias lt='lsd --tree'
 
+# Starship Prompt
+eval "$(starship init zsh)"
