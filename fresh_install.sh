@@ -31,6 +31,9 @@ dnf install -y alacritty \
             python3-dotenv \
             julia \
             nmap \
+            nikto \
+            hydra \
+            medusa \
             texlive* \
             discord \
             steam \
