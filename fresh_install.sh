@@ -86,6 +86,9 @@ mv MesloLGS*.ttf /usr/share/fonts/meslolgs-nf/
 
 fc-cache -v
 
+# Change shell
+chsh -s /bin/zsh $USER
+
 # VirtualBox installation
 dnf -y install VirtualBox kernel-devel-$(uname -r) akmod-VirtualBox
 akmods
