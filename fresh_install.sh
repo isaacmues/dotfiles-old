@@ -71,7 +71,8 @@ dnf install -y alacritty \
             zsh-syntax-highlighting \
             network-manager-applet \
 	    chromium \
-            nautilus-dropbox
+            nautilus-dropbox \
+            youtube-dl
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
