@@ -70,9 +70,11 @@ dnf install -y alacritty \
             zsh-autosuggestions \
             zsh-syntax-highlighting \
             network-manager-applet \
-	    chromium \
+	    chromium-freeworld \
             nautilus-dropbox \
-            youtube-dl
+            youtube-dl \
+	    ranger \
+	    flatpak
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
@@ -89,8 +91,12 @@ fc-cache -v
 # Change shell
 chsh -s /bin/zsh $USER
 
-# VirtualBox installation
+# VirtualBox
 dnf -y install VirtualBox kernel-devel-$(uname -r) akmod-VirtualBox
 akmods
 systemctl restart vboxdrv
 usermod -a -G vboxusers $USER
+
+# Spotify
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub com.spotify.Client
