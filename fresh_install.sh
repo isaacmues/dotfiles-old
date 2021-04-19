@@ -75,7 +75,8 @@ dnf install -y alacritty \
             youtube-dl \
 	    ranger \
 	    flatpak \
-            transmission
+            transmission \
+            gparted
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
