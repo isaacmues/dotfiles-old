@@ -70,11 +70,11 @@ dnf install -y alacritty \
             zsh-autosuggestions \
             zsh-syntax-highlighting \
             network-manager-applet \
-	    chromium-freeworld \
+            chromium-freeworld \
             nautilus-dropbox \
             youtube-dl \
-	    ranger \
-	    flatpak \
+            ranger \
+            flatpak \
             transmission \
             gparted \
             keepassxc
