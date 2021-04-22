@@ -77,7 +77,8 @@ dnf install -y alacritty \
             flatpak \
             transmission \
             gparted \
-            keepassxc
+            keepassxc \
+            djview4
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
