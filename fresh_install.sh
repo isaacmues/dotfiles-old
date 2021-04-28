@@ -37,7 +37,6 @@ dnf install -y alacritty \
             discord \
             steam \
             thunderbird \
-            gnome-tweaks \
             ffmpeg \
             p7zip* \
             unrar \
