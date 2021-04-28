@@ -26,8 +26,7 @@ dnf install -y alacritty \
             vim-fugitive \
             zathura \
             zathura-plugins-all \
-            zathura-bash-completion \
-            python3-discord \
+            zathura-zsh-completion \
             python3-dotenv \
             julia \
             nmap \
