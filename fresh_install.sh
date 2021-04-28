@@ -77,7 +77,11 @@ dnf install -y alacritty \
             transmission \
             gparted \
             keepassxc \
-            djview4
+            djview4 \
+            lxappearance \
+            sweet-gtk-theme \
+            materia-gtk-theme \
+            candy-icon-theme \
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
