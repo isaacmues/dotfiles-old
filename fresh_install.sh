@@ -82,7 +82,8 @@ dnf install -y alacritty \
             materia-gtk-theme \
             candy-icon-theme \
             deepin-gtk-theme \
-            deepin-icon-theme
+            deepin-icon-theme \
+            flameshot
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
