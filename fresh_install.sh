@@ -84,7 +84,8 @@ dnf install -y alacritty \
             deepin-gtk-theme \
             deepin-icon-theme \
             flameshot \
-            lm_sensors
+            lm_sensors \
+            units
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
