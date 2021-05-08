@@ -85,7 +85,8 @@ dnf install -y alacritty \
             deepin-icon-theme \
             flameshot \
             lm_sensors \
-            units
+            units \
+            polkit-gnome
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
