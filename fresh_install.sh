@@ -87,7 +87,8 @@ dnf install -y alacritty \
             lm_sensors \
             units \
             polkit-gnome \
-            numlockx
+            numlockx \
+            xinput
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
