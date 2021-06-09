@@ -27,6 +27,7 @@ dnf install -y alacritty \
             zathura \
             zathura-plugins-all \
             zathura-zsh-completion \
+            zathura-pdf-* \
             python3-dotenv \
             julia \
             nmap \
