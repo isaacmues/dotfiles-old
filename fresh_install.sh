@@ -90,7 +90,8 @@ dnf install -y alacritty \
             polkit-gnome \
             numlockx \
             xinput \
-            rofi
+            rofi \
+            krita
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
