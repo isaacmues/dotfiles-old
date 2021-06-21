@@ -91,7 +91,8 @@ dnf install -y alacritty \
             numlockx \
             xinput \
             rofi \
-            krita
+            krita \
+            python3-bpython*
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
