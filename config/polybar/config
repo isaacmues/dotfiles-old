@@ -55,16 +55,17 @@ font-0 = "MesloLGS NF:size=8"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
-modules-left = bspwm i3
+modules-left = i3
 ;modules-center = mpd
-modules-right = filesystem memory cpu temperature wlan eth battery date pulseaudio 
+modules-center = date 
+modules-right = filesystem memory cpu temperature wlan eth battery pulseaudio 
 
-tray-position = right
-tray-padding = 2
+;tray-position = left
+;tray-padding = 5
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
-wm-restack = i3
+;wm-restack = i3
 
 ;override-redirect = true
 
@@ -103,7 +104,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted =  %free%
+label-mounted = DSK %free%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 format-mounted-underline =  #8C198C
@@ -209,7 +210,7 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline =  #8C198C
-label = ﬙ %percentage:2%%
+label = CPU %percentage%%
 
 [module/memory]
 type = internal/memory
@@ -217,7 +218,7 @@ interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline =  #8C198C
-label =  %gb_used%
+label = RAM %gb_used%
 
 [module/wlan]
 type = internal/network
@@ -226,7 +227,7 @@ interval = 3.0
 
 format-connected = <label-connected>
 format-connected-underline = #008000
-label-connected = 直%essid%
+label-connected = WLN %essid%
 
 format-disconnected = 睊
 format-disconnected-underline = #f90000
@@ -237,13 +238,13 @@ format-disconnected-underline = #f90000
 
 [module/eth]
 type = internal/network
-interface = enp1s0
+interface = eno1
 interval = 3.0
 
 format-connected-underline = #008000
 format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
-label-connected =  %local_ip%
+label-connected = ETH %local_ip%
 
 format-disconnected = 
 format-disconnected-underline = #f90000
@@ -257,23 +258,22 @@ type = internal/date
 interval = 5
 
 date = " %a %d %b"
-
 time = %l:%M %p
+label = %date% %time%
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
-label = %date% %time%
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <ramp-volume> <label-volume> 
+format-volume = VOL <label-volume> 
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = ﱝ (muted)
+label-muted = (MUTED)
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -369,7 +369,7 @@ type = internal/temperature
 thermal-zone = 0
 warn-temperature = 80
 
-format = <ramp> <label>
+format = TMP <label>
 format-underline =  #8C198C
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
