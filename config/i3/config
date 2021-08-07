@@ -40,7 +40,7 @@ exec --no-startup-id numlockx on
 # For the laptop only
 exec --no-startup-id xinput set-prop 9 'libinput Tapping Enabled' 1
 # For the new keyboard
-#exec --no-startup setxkbmap us intl
+#exec --no-startup-id setxkbmap us intl
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Use pactl to adjust volume in PulseAudio.
