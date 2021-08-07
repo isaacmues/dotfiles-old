@@ -93,7 +93,8 @@ dnf install -y alacritty \
             rofi \
             krita \
             python3-bpython* \
-            xournal
+            xournal \
+            jetbrains-mono-fonts-all
 
 # Install Nerdfont for Powerlevel10k
 mkdir /usr/share/fonts/meslolgs-nf/
