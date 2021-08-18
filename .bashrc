@@ -19,8 +19,8 @@ export PATH
 
 eval "$(starship init bash)"
 
-alias ls='lsd'
-alias ll='lsd -l'
-alias la='lsd -a'
-alias lla='lsd -la'
-alias lt='lsd --tree'
+alias ls='lsd --icon-theme unicode'
+alias ll='lsd -l --icon-theme unicode'
+alias la='lsd -a --icon-theme unicode'
+alias lla='lsd -la --icon-theme unicode'
+alias lt='lsd --tree --icon-theme unicode'
